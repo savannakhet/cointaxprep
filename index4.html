@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your CPA Tax Practice</title>
+<style>
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: Arial, sans-serif; line-height:1.6; color:#333; scroll-behavior:smooth;}
+a {text-decoration:none; color: inherit;}
+
+/* Floating CTA button */
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffcc00;
+    color: #003366;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* Header / Hero */
+header {
+    background: linear-gradient(rgba(0,64,128,0.7), rgba(0,64,128,0.7)), #004080;
+    color:white;
+    height: 90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding: 0 20px;
+}
+header h1 {font-size:2.8em; margin-bottom:10px;}
+header p {font-size:1.2em; max-width:600px; margin-bottom:20px;}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top:0;
+    background-color:#003366;
+    display:flex;
+    justify-content:center;
+    z-index:1000;
+}
+nav a {color:white; padding:12px 20px; display:inline-block;}
+nav a:hover {background-color:#002244;}
+
+/* Sections */
+section {padding:60px 20px; max-width:900px; margin:0 auto; position:relative;}
+section h2 {text-align:center; color:#004080; margin-bottom:30px; font-size:2em;}
+
+/* Services */
+.services {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+.service {
+    background:white;
+    flex:1 1 260px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    text-align:center;
+    opacity:0; transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+.service svg {width:50px; height:50px; fill:#004080; margin-bottom:10px;}
+
+/* Testimonials */
+.testimonials {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+.testimonial {background:#f0f8ff; padding:20px; border-radius:10px; flex:1 1 260px; text-align:center;}
+.testimonial p {font-style:italic; margin-bottom:10px;}
+.testimonial span {font-weight:bold; color:#003366;}
+
+/* Contact Form */
+form {background:white; padding:20px; border-radius:10px; box-shadow:0 3px 12px rgba(0,0,0,0.1); max-width:450px; margin:0 auto;}
+form input, form textarea {width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px;}
+form button {background:#004080; color:white; border:none; padding:12px 18px; border-radius:6px; cursor:pointer;}
+form button:hover {background:#002244;}
+
+/* Footer */
+footer {text-align:center; padding:30px 20px; background:#003366; color:white;}
+
+/* Parallax Dividers */
+.parallax-container {position: relative; height:80px; overflow:hidden;}
+.parallax-item {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:60px;
+    height:60px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    fill:#004080;
+}
+
+/* Responsive */
+@media(max-width:768px){.services, .testimonials{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<a href="#contact" class="floating-cta">Book Consultation</a>
+
+<header>
+    <h1>Your CPA Tax Practice</h1>
+    <p>Professional Tax Preparation & Consulting for Individuals and Small Businesses</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a licensed CPA with 6 years of audit experience. I provide professional tax preparation and consulting services to individuals and small businesses, helping you maximize returns and stay compliant.</p>
+</section>
+
+<!-- Parallax Divider with Inline SVG -->
+<div class="parallax-container">
+  <svg class="parallax-item" data-speed="0.3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30"/></svg>
+</div>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="services">
+        <div class="service">
+            <svg viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="40"/></svg>
+            <h3>Individual Tax Returns</h3>
+            <p>Accurate and efficient preparation for personal income tax returns.</p>
+        </div>
+        <div class="service">
+            <svg viewBox="0 0 64 64"><polygon points="32,4 60,60 4,60"/></svg>
+            <h3>Small Business Tax</h3>
+            <p>Helping small businesses navigate corporate taxes and deductions.</p>
+        </div>
+        <div class="service">
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28"/></svg>
+            <h3>Consulting</h3>
+            <p>Advice on tax planning, deductions, and financial strategy.</p>
+        </div>
+    </div>
+</section>
+
+<div class="parallax-container">
+  <svg class="parallax-item" data-speed="0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polygon points="32,0 64,64 0,64"/></svg>
+</div>
+
+<section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>“Quick, professional, and saved me money on my taxes!”</p>
+            <span>- Alex M.</span>
+        </div>
+        <div class="testimonial">
+            <p>“Very responsive and explained everything clearly.”</p>
+            <span>- Sarah K.</span>
+        </div>
+        <div class="testimonial">
+            <p>“Highly recommend for small business owners!”</p>
+            <span>- John L.</span>
+        </div>
+    </div>
+</section>
+
+<div class="parallax-container">
+  <svg class="parallax-item" data-speed="0.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="0" y="0" width="64" height="64"/></svg>
+</div>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your CPA Tax Practice</p>
+</footer>
+
+<script>
+// Fade-in services
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+},{threshold:0.2});
+document.querySelectorAll('.service').forEach(el => observer.observe(el));
+
+// Parallax scroll
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.parallax-item').forEach(el => {
+    const speed = parseFloat(el.getAttribute('data-speed'));
+    const offset = window.scrollY * speed;
+    el.style.transform = `translate(-50%, calc(-50% + ${offset}px))`;
+  });
+});
+</script>
+
+</body>
+</html>
